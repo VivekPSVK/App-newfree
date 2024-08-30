@@ -1,0 +1,18 @@
+{
+  "statusCode": 200,
+  "data": {
+    "addressLine1": "85552 Gottlieb Club",
+    "addressLine2": "Apt. 293",
+    "city": "Hettingermouth",
+    "country": "India",
+    "owner": "66d17e9a23a570ad3b7dd7ba",
+    "pincode": "409209",
+    "state": "Delaware",
+    "_id": "66d17ea223a570ad3b7dd81a",
+    "createdAt": "2024-08-30T08:11:14.504Z",
+    "updatedAt": "2024-08-30T08:11:14.504Z",
+    "__v": 0
+  },
+  "message": "Address created successfully",
+  "success": true
+}

@@ -1,0 +1,20 @@
+{
+  "statusCode": 200,
+  "data": {
+    "_id": "66d17ea123a570ad3b7dd810",
+    "name": "Season sale",
+    "couponCode": "GETGJX434",
+    "type": "FLAT",
+    "discountValue": 605,
+    "isActive": true,
+    "minimumCartValue": 700,
+    "startDate": "2023-02-13T11:07:10.693Z",
+    "expiryDate": "2024-12-13T11:07:10.693Z",
+    "owner": "66d17e9a23a570ad3b7dd7ba",
+    "createdAt": "2024-08-30T08:11:13.084Z",
+    "updatedAt": "2024-08-30T08:11:13.084Z",
+    "__v": 0
+  },
+  "message": "Coupon deleted successfully",
+  "success": true
+}
