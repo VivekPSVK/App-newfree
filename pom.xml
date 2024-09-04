@@ -18,11 +18,8 @@
 
     <dependencies>
         <dependency>
-            <!-- normally not needed     -->
-            <!-- here used to run server -->
             <groupId>io.karatelabs</groupId>
             <artifactId>karate-core</artifactId>
-            <!-- <classifier>all</classifier> -->
             <version>${karate.version}</version>
         </dependency>
         <dependency>
@@ -31,6 +28,14 @@
             <version>${karate.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>io.karatelabs</groupId>
+            <artifactId>karate-core</artifactId>
+            <version>${karate.version}</version>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>io.karatelabs</groupId>
             <artifactId>karate-gatling</artifactId>
@@ -41,8 +46,21 @@
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
-            <version>1.0.2</version> <!-- or the latest version -->
+            <version>1.0.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -53,11 +71,29 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
-                        <include>**/*karateRunner.testrunner.java</include>
+                        <include>**/*testrunner.java</include>
                     </includes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <executions>
+                    <execution>
+                        <id>integration-test</id>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                        <phase>integration-test</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <reportsDirectory>${project.build.directory}/karate-reports</reportsDirectory>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 </project>

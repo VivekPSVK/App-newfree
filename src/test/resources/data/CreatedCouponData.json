@@ -1,18 +1,18 @@
 {
   "statusCode": 200,
   "data": {
-    "_id": "66d2123616935d70d2b196ff",
+    "_id": "66d86d40610b49a1c2ae5f3d",
     "name": "Season sale",
-    "couponCode": "GETSJRHHG",
+    "couponCode": "GETL9JJF1",
     "type": "FLAT",
     "discountValue": 605,
     "isActive": true,
     "minimumCartValue": 700,
     "startDate": "2023-02-13T11:07:10.693Z",
     "expiryDate": "2024-12-13T11:07:10.693Z",
-    "owner": "66d2123216935d70d2b196a9",
-    "createdAt": "2024-08-30T18:40:54.176Z",
-    "updatedAt": "2024-08-30T18:40:54.176Z",
+    "owner": "66d86d3c610b49a1c2ae5ee7",
+    "createdAt": "2024-09-04T14:22:56.318Z",
+    "updatedAt": "2024-09-04T14:22:56.318Z",
     "__v": 0
   },
   "message": "Coupon deleted successfully",
